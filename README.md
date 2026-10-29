@@ -264,4 +264,5 @@ tests/                     standalone suites
 
 ## License
 
-No license has been chosen yet: until one is added, all rights are reserved.
+[MIT](LICENSE). You are free to use, change and share it. Note that it drives your Mac,
+so read what a tool does before you approve it, and use it at your own risk.
