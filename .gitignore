@@ -1,0 +1,32 @@
+# secrets and local configuration - never commit
+.env
+.env.*
+!.env.example
+secrets.env
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Swift companion build output
+companion/.build/
+companion/build/
+*.xcuserstate
+
+# macOS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# local state, backups, scratch
+*.tgz
+*.sqlite3
+usage.jsonl
+.jarvis/
+NIGHTLY.md
+WORKLOG-*.md

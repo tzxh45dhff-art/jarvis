@@ -1,0 +1,42 @@
+# JARVIS - core dependencies (macOS, Apple Silicon, Python 3.12+; developed on 3.13).
+#
+#   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+#
+# This is everything needed with a cloud model (Azure OpenAI, Gemini or Claude).
+# The on-device model and the voice stack are optional: requirements-local.txt.
+
+# terminal UI, networking, text handling
+rich>=14.0
+requests>=2.32
+certifi
+numpy>=2.0
+beautifulsoup4>=4.12
+lxml>=5.0
+trafilatura>=2.0
+ddgs>=9.0                    # web search
+yt-dlp>=2026.3               # YouTube info and transcripts
+
+# memory: local sentence embeddings (pulls in torch)
+sentence-transformers>=5.0
+
+# documents: PDF, Word, PowerPoint, Excel, charts
+markdown>=3.5
+markdown-it-py>=3.0
+pygments>=2.17
+reportlab>=4.0
+pypdf>=5.0
+python-docx>=1.1
+python-pptx>=1.0
+openpyxl>=3.1
+pandas>=2.2
+matplotlib>=3.9
+pillow>=10.0
+
+# macOS frameworks: calendar, contacts, accessibility, screen, OCR
+pyobjc-core>=10.0
+pyobjc-framework-Cocoa>=10.0
+pyobjc-framework-Quartz>=10.0
+pyobjc-framework-ApplicationServices>=12.2
+pyobjc-framework-EventKit>=10.0
+pyobjc-framework-Contacts>=10.0
+pyobjc-framework-Vision>=10.0

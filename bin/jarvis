@@ -1,0 +1,20 @@
+#!/bin/bash
+# JARVIS launcher. Resolves through symlinks so `ln -s` onto PATH works.
+set -e
+SRC="${BASH_SOURCE[0]}"
+while [ -L "$SRC" ]; do
+  DIR="$(cd -P "$(dirname "$SRC")" && pwd)"
+  SRC="$(readlink "$SRC")"
+  [[ "$SRC" != /* ]] && SRC="$DIR/$SRC"
+done
+JARVIS_DIR="$(cd -P "$(dirname "$SRC")/.." && pwd)"
+PY="$JARVIS_DIR/.venv/bin/python"
+[ -x "$PY" ] || PY="$(command -v python3)"
+export PYTHONPATH="$JARVIS_DIR${PYTHONPATH:+:$PYTHONPATH}"
+exec "$PY" -W ignore -c "
+import sys, warnings
+sys.path.insert(0, '$JARVIS_DIR')
+warnings.filterwarnings('ignore')
+from jarvis.cli import main
+sys.exit(main())
+" "$@"

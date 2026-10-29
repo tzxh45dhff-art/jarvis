@@ -1,0 +1,15 @@
+# Optional: run the model and the voice on this Mac instead of in the cloud.
+#   .venv/bin/pip install -r requirements.txt -r requirements-local.txt
+#
+# Needs roughly 16 GB of free memory for the default 26B model (see docs/local-engine.md).
+mlx>=0.32
+mlx-lm>=0.31
+mlx-vlm>=0.6
+mlx-audio>=0.4              # Kokoro text-to-speech
+mlx-whisper>=0.4            # speech-to-text
+openwakeword>=0.6           # "Hey JARVIS"
+onnxruntime>=1.20
+sounddevice>=0.5
+soundfile>=0.13
+espeakng-loader>=0.2
+misaki>=0.7

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleName</key><string>JARVIS Companion</string>
+  <key>CFBundleDisplayName</key><string>JARVIS Companion</string>
+  <key>CFBundleIdentifier</key><string>com.example.jarvis.companion</string>
+  <key>CFBundleExecutable</key><string>JARVIS Companion</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>1.0</string>
+  <key>CFBundleVersion</key><string>1</string>
+  <key>LSMinimumSystemVersion</key><string>13.0</string>
+  <key>LSUIElement</key><true/>
+  <key>NSHighResolutionCapable</key><true/>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>JARVIS listens while you hold control and option.</string>
+  <key>NSSpeechRecognitionUsageDescription</key>
+  <string>JARVIS turns what you say into text on this Mac.</string>
+  <key>NSAppleEventsUsageDescription</key>
+  <string>JARVIS controls apps on your behalf.</string>
+  <key>NSContactsUsageDescription</key>
+  <string>JARVIS finds the right person when you ask it to call or text someone.</string>
+  <key>NSCalendarsFullAccessUsageDescription</key>
+  <string>JARVIS checks and adds events when you ask about your schedule.</string>
+  <key>NSCalendarsUsageDescription</key>
+  <string>JARVIS checks and adds events when you ask about your schedule.</string>
+  <key>NSRemindersFullAccessUsageDescription</key>
+  <string>JARVIS reads and adds reminders when you ask.</string>
+  <key>NSRemindersUsageDescription</key>
+  <string>JARVIS reads and adds reminders when you ask.</string>
+</dict>
+</plist>
